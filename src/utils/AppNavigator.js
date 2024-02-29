@@ -6,12 +6,13 @@ import Detail from '../container/Detail/Detail';
 import Profile from '../container/Profile/Profile';
 import SplashScreen from '../container/Home/SplashScreen';
 import Parent from './Parent';
+import linking from '../container/Home/Linking';
 
 const Stack = createStackNavigator();
 
 const AppNavigator = () => {
   return (
-    <NavigationContainer>
+    <NavigationContainer linking={linking}>
       <Stack.Navigator>
         <Stack.Screen
           name="SplashScreen"
